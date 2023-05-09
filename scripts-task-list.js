@@ -3,12 +3,12 @@ const taskNameInput = document.getElementById('task-name');
 const taskDescriptionInput = document.getElementById('task-description');
 const taskList = document.getElementById('task-list');
 const completeButton = document.createElement('button');
-completeButton.textContent = task.isCompleted ? '✓' : '✗';
+completeButton.textContent = task.isCompleted ? 'Completed' : 'In Progress';
 completeButton.classList.add('complete-button');
 completeButton.classList.add(task.isCompleted ? 'completed' : 'not-completed');
 completeButton.addEventListener('click', () => {
     task.isCompleted = !task.isCompleted;
-    completeButton.textContent = task.isCompleted ? '✓' : '✗';
+    completeButton.textContent = task.isCompleted ? 'Completed' : 'In Progress';
     completeButton.classList.toggle('completed');
     completeButton.classList.toggle('not-completed');
     saveTasks();
