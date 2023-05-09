@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #0330fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    background-color: #0330fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
