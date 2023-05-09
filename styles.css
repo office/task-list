@@ -79,3 +79,6 @@ h1 {
 }
 
 
+#task-form {
+    margin-top: 40px; /* Adjust this value to increase the distance between the text boxes and the "Task List" text */
+}
