@@ -43,3 +43,10 @@ button {
     padding: 5px 10px;
 }
 
+.complete-button.not-completed {
+    background-color: #edda6d;
+}
+
+.complete-button.completed {
+    background-color: #42f548;
+}
