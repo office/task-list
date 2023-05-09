@@ -24,11 +24,11 @@ function renderTask(task) {
     });
 
     const completeButton = document.createElement('button');
-    completeButton.textContent = task.isCompleted ? '✓' : '✗';
+    completeButton.textContent = task.isCompleted ? 'Completed' : 'In Progress';
     completeButton.classList.add('complete-button');
     completeButton.addEventListener('click', () => {
         task.isCompleted = !task.isCompleted;
-        completeButton.textContent = task.isCompleted ? '✓' : '✗';
+        completeButton.textContent = task.isCompleted ? 'Completed' : 'In Progress';
         saveTasks();
     });
 
