@@ -50,3 +50,9 @@ button {
 .complete-button.completed {
     background-color: #42f548;
 }
+
+h1 {
+    font-size: 3em; /* Increase the font size */
+    text-align: center; /* Center the text */
+}
+
