@@ -45,7 +45,14 @@ function renderTask(task) {
         starButton.textContent = task.isStarred ? '⭐' : '☆';
         saveTasks();
     });
-
+const completeButton = document.createElement('button');
+completeButton.textContent = task.isCompleted ? '✓' : '✗';
+completeButton.classList.add('complete-button');
+completeButton.addEventListener('click', () => {
+  task.isCompleted = !task.isCompleted;
+  completeButton.textContent = task.isCompleted ? '✓' : '✗';
+  saveTasks();
+});
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'X';
     deleteButton.classList.add('delete-button');
@@ -65,6 +72,7 @@ function renderTask(task) {
     taskDescription.classList.add('task-description');
 
     li.appendChild(starButton);
+    li.appendChild(completeButton);
     li.appendChild(deleteButton);
     li.appendChild(taskName);
     li.appendChild(taskDescription);
