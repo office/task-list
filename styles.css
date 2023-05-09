@@ -56,3 +56,6 @@ h1 {
     text-align: center; /* Center the text */
 }
 
+.delete-button {
+    background-color: #f03e3e;
+}
