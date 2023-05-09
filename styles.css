@@ -25,3 +25,16 @@ button {
 button:hover {
     opacity: 0.8;
 }
+input[type="text"] {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #0330fc;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #4195fc;
+}
