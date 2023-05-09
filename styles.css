@@ -54,7 +54,7 @@ button {
 h1 {
     font-size: 3em; /* Increase the font size */
     text-align: center; /* Center the text */
-     margin-top: 20px; /* Adjust this value to change the space above the header */
+     margin-top: 100px; /* Adjust this value to change the space above the header */
 
 }
 
