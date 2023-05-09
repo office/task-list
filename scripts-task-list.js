@@ -25,12 +25,12 @@ function renderTask(task) {
 
     // Replace the existing completeButton code with this updated code
     const completeButton = document.createElement('button');
-    completeButton.textContent = task.isCompleted ? '✓' : '✗';
+    completeButton.textContent = task.isCompleted ? 'Completed' : 'In Progress';
     completeButton.classList.add('complete-button');
     completeButton.classList.add(task.isCompleted ? 'completed' : 'not-completed');
     completeButton.addEventListener('click', () => {
         task.isCompleted = !task.isCompleted;
-        completeButton.textContent = task.isCompleted ? '✓' : '✗';
+        completeButton.textContent = task.isCompleted ? 'Completed' : 'In Progress';
         completeButton.classList.toggle('completed');
         completeButton.classList.toggle('not-completed');
         saveTasks();
