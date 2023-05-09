@@ -65,11 +65,11 @@ h1 {
 h1 {
     font-size: 3em;
     text-align: center;
-    margin-top: 10px; /* Adjust this value to move "Task List" higher up */
+    margin-top: 40px; /* Adjust this value to move "Task List" higher up */
     margin-bottom: 10px; /* Add this property to reduce the space below the header */
 }
 
 .nav-button {
-    margin-top: 30px; /* Adjust this value to move the "Go to Dashboard" button lower down */
+    margin-top: 50px; /* Adjust this value to move the "Go to Dashboard" button lower down */
 }
 
