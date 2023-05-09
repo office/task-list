@@ -23,6 +23,7 @@ taskForm.addEventListener('submit', (e) => {
         name: taskName,
         description: taskDescription,
         isStarred: false,
+        isCompleted: false,
     };
 
     tasks.push(task);
